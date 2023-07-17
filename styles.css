@@ -1,0 +1,11 @@
+body{
+    counter-reset: game;
+}
+
+input:checked{
+    counter-increment: game;
+}
+
+.total::after{
+    content: counter(game);
+}
